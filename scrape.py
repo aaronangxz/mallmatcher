@@ -9,8 +9,6 @@ results = soup.find(id='storelisting')
 
 job_elems = results.find_all('div',class_ = 'retailerlogo')
 
-#print(results.prettify())
-
 for job_elem in job_elems:
     title_elem = job_elem.find('div')
     print(title_elem.text.strip())
